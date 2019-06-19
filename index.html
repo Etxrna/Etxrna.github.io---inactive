@@ -8,20 +8,27 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Etxrna | Home</title>
-
-    <link rel="shortcut icon" href="EtxrnaLogo.jpg">
+    <title>Etxrna | Games</title>
+      
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="EtxrnaLogo.jpg">
     <link href="css/half-slider.css" rel="stylesheet">
 
   </head>
   <style>
-    @font-face { 
+     @font-face { 
         font-family: Usedfont; src: url('Alien Cyborg.ttf');
     }
     body {
       padding-top: 54px;
       font-family: Usedfont
+    }
+    .navbar-nav > li{
+      padding-right:30px;
+      padding-left:10px;
+    }
+    body {
+      padding-top: 54px;
     }
 
     @media (min-width: 992px) {
@@ -40,32 +47,38 @@
           height: 450px;
       }
     }
-    .navbar-nav > li{
-      padding-right:30px;
-      padding-left:10px;
+    .imageResize{
+    width:100%;
+    height: 600px;
+    @media (min-width: 992px) {
+          height: 650px;
+        }    
     }
-    
+    .TextResize1{
+        font-size: 50px; 
+        text-align: center;
+    }
   </style>
 
-  <body style="background:url('background2.jpg'); background-size:cover">
+  <body style="background:url('gamebackground.jpg'); background-size:cover">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #000000">
       <div class="container">
         <a href="#" class="navbar-left"><img src="EtxrnaLogo.jpg" width="80px" height="40px"></a>
-        <a class="navbar-brand" href="#" style="font-size: 30px">ETXRNA</a>
+        <a class="navbar-brand" href="#" style="font-size: 25px">ETXRNA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto, menu" style="font-size: 20px">
             <li class="nav-item active">
-              <a class="nav-link" href="#" style="color:yellow;">HOME
+              <a class="nav-link" href=".." style="color:yellow;">HOME
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Games/" style="color:red;">GAMES</a>
+              <a class="nav-link" href="#" style="color:red;">GAMES</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/Announcements/" style="color:blue;">ANNOUNCEMENTS</a>
@@ -80,7 +93,6 @@
         </div>
       </div>
     </nav>
-    
     <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -113,31 +125,48 @@
         </a>
       </div>
     </header>
-
+    <header>
+        <h1 class = "TextResize1"> Games
+        </h1>
+    </header>
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" >
       <div class="row"> 
-          <div class="col-md-6">
+          <div class="col-md-3">
               <div class="card my-4" style="background: url(background.jpg)">
-                <h5 class="card-header" style="color:green">Important Dates</h5>
+                <h5 class="card-header" style="color:green">PC</h5>
                 <div class="card-body" style="color:white">
-                  12/12/2018 - Official Website Launch
+                  Working On It (Download Coming Very Soon) Release Date Not Set
                 </div>
               </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-3">
               <div class="card my-4" style="background: url(background.jpg)">
-                <h5 class="card-header" style="color:green">What's New?</h5>
+                <h5 class="card-header" style="color:green">Mobile</h5>
                 <div class="card-body" style="color:white">
-                  The Overlooked (Work In Progress)
+                  Coming Soon
+                </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card my-4" style="background: url(background.jpg)">
+                <h5 class="card-header" style="color:green">Console</h5>
+                <div class="card-body" style="color:white">
+                  Coming Soon
+                </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card my-4" style="background: url(background.jpg)">
+                <h5 class="card-header" style="color:green">Online Version</h5>
+                <div class="card-body" style="color:white">
+                  <button class="btn-danger" onclick="location.href='TheOverlookedWEBGL/index.html'" >Launch DEV Build</button>
                 </div>
               </div>
           </div>
         </div>
     </div>
-        
-              
-
+      
     <!-- Footer -->
     <footer class="py-5" style="background-color: #000000">
       <div class="container">
